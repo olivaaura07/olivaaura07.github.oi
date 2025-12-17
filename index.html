@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliva Aura Hidayat | Portofolio</title>
     <meta name="description"
-        content="Portofolio Oliva Aura Hidayat, mahasiswa Sistem Informasi yang bercita-cita menjadi UI/UX Designer.">
+        content="Portofolio Oliva Aura Hidayat, mahasiswa Sistem Informasi yang berminat di bidang UI/UX Design.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Background Decoration -->
     <div class="background-shape shape-1"></div>
     <div class="background-shape shape-2"></div>
 
+    <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="logo">OLIVA AURA HIDAYAT<span class="dot">.</span></div>
@@ -34,57 +42,70 @@
     </header>
 
     <main>
+
+        <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <span class="subtitle">Halo, saya</span>
                 <h1>Oliva Aura Hidayat</h1>
-                <p class="typing-text">MAHASISWA SISTEM INFORMASI | <span id="typing-effect"></span></p>
+                <p class="typing-text">
+                    MAHASISWA SISTEM INFORMASI | <span id="typing-effect"></span>
+                </p>
+
                 <div class="cta-buttons">
                     <a href="#contact" class="btn primary">Hubungi Saya</a>
                     <a href="#about" class="btn secondary">Lihat Profil</a>
                 </div>
             </div>
+
             <div class="hero-visual">
                 <div class="profile-image-placeholder">
-
-                    <div class="abstract-shape"></div>
+                    <!-- FOTO PROFIL -->
+                    <img src="img/foto-almet.jpg" alt="Foto Oliva Aura Hidayat" class="profile-image">
                 </div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">Tentang Saya</h2>
+
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Saat ini saya adalah mahasiswa dengan program studi <strong>Sistem Informasi</strong> di
-                            salah
-                            satu Universitas Swasta terbaik di Kabupaten Lombok Timur. Saya merupakan lulusan SMK tahun
-                            2023
-                            dengan jurusan Rekayasa
-                            Perangkat Lunak (RPL).</p>
-                        <p>Minat utama saya berada pada bidang <strong>UI/UX Design</strong>. Saya tertarik untuk
-                            menciptakan tampilan digital yang intuitif, elegan, dan mudah digunakan. Saat ini saya terus
-                            belajar dan mengembangkan kemampuan untuk menjadi seorang UI/UX Designer profesional di
-                            masa depan.</p>
+                        <p>
+                            Saya adalah mahasiswa program studi <strong>Sistem Informasi</strong> di Universitas
+                            Hamzanwadi. Saya merupakan lulusan SMK tahun 2023 dengan jurusan
+                            <strong>Rekayasa Perangkat Lunak (RPL)</strong>.
+                        </p>
+                        <p>
+                            Minat utama saya berada pada bidang <strong>UI/UX Design</strong>. Saya tertarik
+                            menciptakan tampilan digital yang intuitif, elegan, dan mudah digunakan.
+                            Saat ini saya terus belajar dan mengembangkan kemampuan untuk menjadi
+                            UI/UX Designer profesional di masa depan.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Education Section -->
         <section id="education" class="section alt-bg">
             <div class="container">
                 <h2 class="section-title">Perjalanan Pendidikan</h2>
+
                 <div class="timeline">
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">Sedang Berjalan</div>
                         <div class="timeline-content">
                             <h3>Sarjana Sistem Informasi</h3>
-                            <p>UNIVERSITAS HAMZANWADI</p>
+                            <p>Universitas Hamzanwadi</p>
                             <p>Fokus pada analisis sistem, pengalaman pengguna, dan inovasi digital.</p>
                         </div>
                     </div>
+
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">Lulus 2023</div>
@@ -94,46 +115,58 @@
                             <p>Mempelajari dasar pemrograman, pengembangan web, dan logika perangkat lunak.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
                 <h2 class="section-title">Kontak</h2>
+
                 <div class="contact-wrapper glass">
                     <form id="contact-form">
                         <div class="input-group">
                             <input type="text" required>
                             <label>Nama Anda</label>
                         </div>
+
                         <div class="input-group">
                             <input type="email" required>
                             <label>Email Anda</label>
                         </div>
+
                         <div class="input-group">
                             <textarea required></textarea>
                             <label>Pesan</label>
                         </div>
-                        <button type="submit" class="btn primary full-width">Kirim Pesan</button>
+
+                        <button type="submit" class="btn primary full-width">
+                            Kirim Pesan
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Oliva Aura Hidayat. Dirancang dengan elegan.</p>
+
             <div class="socials">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-envelope"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

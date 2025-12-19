@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Aura Hidayat | Portofolio</title>
+    <meta name="description"
+        content="Portofolio Olivia Aura Hidayat, mahasiswa Sistem Informasi yang bercita-cita menjadi UI/UX Designer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Oliva Aura Hidayat<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="subtitle">Halo, saya</span>
+                <h1>Oliva Aura Hidayat</h1>
+                <p class="typing-text">MAHASISWA SISTEM INFORMASI | <span id="typing-effect"></span></p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">Hubungi Saya</a>
+                    <a href="#about" class="btn secondary">Lihat Profil</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-image-placeholder">
+                    <!-- Placeholder using CSS shape -->
+                    <div class="abstract-shape-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Tentang Saya</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="reveal" style="transition-delay: 0.2s;">Saat ini saya adalah mahasiswa dengan program
+                            studi <strong>Sistem Informasi</strong> di Universitas Hamzanwadi. Saya merupakan lulusan
+                            SMK tahun 2023 dengan jurusan Rekayasa Perangkat Lunak (RPL).</p>
+                        <p class="reveal" style="transition-delay: 0.4s;">Minat utama saya berada pada bidang
+                            <strong>UI/UX Design</strong>. Saya tertarik untuk menciptakan tampilan digital yang
+                            intuitif, elegan, dan mudah digunakan. Saya terus belajar untuk menjadi desainer
+                            profesional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title reveal">Perjalanan Pendidikan</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal" style="transition-delay: 0.2s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sedang Berjalan</div>
+                        <div class="timeline-content">
+                            <h3>Sarjana Sistem Informasi</h3>
+                            <p>Universitas Hamzanwadi</p>
+                            <p>Fokus pada analisis sistem, pengalaman pengguna, dan inovasi digital.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" style="transition-delay: 0.4s;">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Lulus 2023</div>
+                        <div class="timeline-content">
+                            <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+                            <p>Sekolah Menengah Kejuruan (SMK)</p>
+                            <p>Mempelajari dasar pemrograman, pengembangan web, dan logika perangkat lunak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Kontak</h2>
+                <div class="contact-wrapper glass reveal" style="transition-delay: 0.2s;">
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" required>
+                            <label>Nama Anda</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" required>
+                            <label>Email Anda</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea required></textarea>
+                            <label>Pesan</label>
+                        </div>
+                        <button type="submit" class="btn primary full-width">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Oliva Aura Hidayat. Dirancang dengan elegan.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

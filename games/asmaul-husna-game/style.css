@@ -25,52 +25,30 @@
 
 body {
     font-family: var(--font-main);
-    background-color: var(--bg-color);
+    background-color: #E0F7FA;
+    /* Fallback pastel blue */
+    background-image: url('background.png');
+    background-size: 100% 100%;
+    /* Force fit entire image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Parallax-like effect */
     color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* geometric background */
-    background-color: #F1F6F5;
-    background-image: radial-gradient(circle at 50% 50%, #E8F5E9 10%, transparent 10%),
-        radial-gradient(circle at 0 0, transparent 20%, #E8F5E9 25%, transparent 30%),
-        radial-gradient(circle at 100% 100%, transparent 20%, #E8F5E9 25%, transparent 30%),
-        radial-gradient(circle at 100% 0, transparent 20%, #E8F5E9 25%, transparent 30%),
-        radial-gradient(circle at 0 100%, transparent 20%, #E8F5E9 25%, transparent 30%);
-    background-size: 60px 60px;
-    position: relative;
-    overflow: hidden;
-    /* For ornaments */
 }
 
-/* Islamic Corner Ornaments */
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23CADABF' stroke-width='2'%3E%3Cpath d='M0 0 L100 0 A100 100 0 0 1 0 100 Z' fill='%23F1F8E9' opacity='0.5'/%3E%3Cpath d='M10 0 L90 0 A90 90 0 0 1 0 90 L0 10 Z' stroke='%23A0C49D' stroke-width='1' fill='none'/%3E%3Cpath d='M20 0 L80 0 A80 80 0 0 1 0 80 L0 20 Z' stroke='%23A0C49D' stroke-width='1' fill='none'/%3E%3Cpath d='M30 0 L70 0 A70 70 0 0 1 0 70 L0 30 Z' stroke='%23A0C49D' stroke-width='1' fill='none'/%3E%3Ccircle cx='0' cy='0' r='10' fill='%235D9C59' opacity='0.2'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    z-index: -1;
-    pointer-events: none;
-}
-
-body::before {
-    top: -50px;
-    left: -50px;
-    transform: rotate(0deg);
-}
-
-body::after {
-    bottom: -50px;
-    right: -50px;
-    transform: rotate(180deg);
-}
-
+/* Container transparency for better blend */
 .container {
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.95);
+    /* Slightly transparent white */
+    backdrop-filter: blur(5px);
+    border: 3px solid #FFF;
+    /* White border pop */
+
     width: 90%;
     max-width: 450px;
     /* Reduced from 500px */
